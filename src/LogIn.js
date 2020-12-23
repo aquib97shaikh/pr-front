@@ -1,19 +1,28 @@
 import React, { useState } from 'react'
+import Input from './Input';
 
-function LogIn() {
+function LogIn(props) {
     const [username, setUsername] = useState("");
     const [pwd, setPwd] = useState("");
+    const loginHandler = ()=>{
+        props.loginHandler(username,pwd);
+    }
     return (
       <div className="container">
-        <input
+        <Input
           type="text"
+          label="username"
           value={username}
           onChange={(event) => setUsername(event.target.value.trim())}
         />
-        <input
+        <Input
           type="password"
-          onChange={(event) => console.log(event.target.value)}
+          label="pwd"
+          value={pwd}
+          onChange={(event) => setPwd(event.target.value.trim())}
         />
+        <button onClick={loginHandler}>Log In</button>
+        <span className="error">{props.error}</span>
       </div>
     );
 }

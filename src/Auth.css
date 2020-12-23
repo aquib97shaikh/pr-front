@@ -1,0 +1,61 @@
+/* Auth.css */
+.auth {
+    width:50%;
+    margin:auto;
+    margin-top:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+button {
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+}
+
+/* login css */
+.container {
+    position: relative;
+    width:500px;
+    margin:auto;
+    margin-top:100px;
+}
+.inp{
+    position: relative;
+}
+.inp input{
+    height: 30px;
+    width: 300px;
+    margin: 10px;
+    border:1px solid ;
+    border-radius: 9px;
+}
+.inp label{
+    position: absolute;
+    top:10px;
+    font-size: 23px;
+    transition: all 0.4s ease-in;
+    left: 15px;
+}
+input:focus ~ label  {
+    color:red;
+    font-size: 10px;
+    transition: all 0.4s ease-in;
+}
+label.fs10 {
+    color:red;
+    font-size: 10px;
+    transition: all 0.4s ease-in;
+}
+
+
+.container button {
+    position: absolute;
+    height: 40px;
+    width: 150px;
+    border:2px solid whitesmoke;
+    background-color: #3f3f3f;
+    color:whitesmoke;
+    right:5px;
+}
