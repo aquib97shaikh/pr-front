@@ -2,7 +2,7 @@
 .header {
     overflow: hidden;
     background-color: #f1f1f1;
-    padding: 20px 10px;
+    padding: 15px 8px;
   }
   
   /* Style the header links */
@@ -10,11 +10,11 @@
     float: left;
     color: black;
     text-align: center;
-    padding: 12px;
+    padding: 8px;
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
-    border-radius: 4px;
+    border-radius: 10px;
   }
   
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -62,11 +62,12 @@
 
 
 .footer {
+  margin-right:10px;
   text-align: center;
-  background-color: tomato;
+  font-style: italic;
+  background-color: dodgerblue;
   color: white;
   position: fixed;
   width:100%;
-  left: 0px;
   bottom: 0px;
 }

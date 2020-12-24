@@ -11,7 +11,7 @@ function Header(props) {
             Home
           </Link>
           <Link className={prop.contact || ""} to="/contact" onClick={()=>setProp({contact:"active"})}>Contact</Link >
-          <Link className={prop.about || ""} to="/about" onClick={()=>setProp({about:"active"})}>About</Link >
+          <Link  to="" style={{border:"1px solid red"}}onClick={props.logoutHandler}>Logout</Link >
         </div>
       </div>
     );

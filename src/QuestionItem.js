@@ -1,7 +1,7 @@
 import React from 'react'
 
-function Question(props) {
-    
+function QuestionItem(props) {
+
     return (
         <div>
             <h1>{props.item}</h1>
@@ -9,4 +9,4 @@ function Question(props) {
     )
 }
 
-export default Question
+export default QuestionItem

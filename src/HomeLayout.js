@@ -5,21 +5,21 @@ import Footer from './Footer'
 import Header from './Header'
 import Home from './Home';
 
-function HomeLayout() {
-    const [active,setActive] = useState({home:"active"});
+function HomeLayout(props) {
+     const username = (props.user && props.user.username) || "Let's Learn from Each other";
     
     return (
         <>
-        <Header {...active} />
+        <Header  logoutHandler={props.logoutHandler}/>
         <Switch>
-            <Route path="/contact">
+            <Route path="/createQuestion">
                 <Contact/> 
             </Route>
             <Route exact path="/">
                 <Home/> 
             </Route>
         </Switch>
-        <Footer />
+        <Footer username={username} />
         </>
     )
 }

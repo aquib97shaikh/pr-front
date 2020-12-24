@@ -16,7 +16,7 @@ function Auth(props) {
       }
       const isNoU = val => val===null || val === undefined;
       const authHandler = async (url,body) =>{
-        console.log("auth");
+        // console.log("auth");
         fetch(url,{
           method:"POST",
           body:body,
@@ -26,6 +26,7 @@ function Auth(props) {
         })
         .then(r=>r.json())
         .then(r=>{
+          // console.log(r);
           isNoU(r.er) ? props.loggedInHandler(r) : setError(r.er);
         })
       }

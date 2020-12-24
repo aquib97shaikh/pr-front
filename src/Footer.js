@@ -1,10 +1,10 @@
 import React from 'react'
 import "./HeadAndFoot.css"
 
-function Footer() {
+function Footer(props) {
     return (
         <footer className="footer">
-            Footer
+            {props.username}
         </footer>
     )
 }

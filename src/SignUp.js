@@ -6,7 +6,7 @@ function SignUp(props) {
     const [error,setError] = useState(props.error);
     const isNoU = val => val===null || val === undefined;
 
-    const validateEmail = (email) =>/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email)
+    const validateEmail = (email) =>/^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email)
 
     const validateAndCallHandler = ()=>{
         setError(props.error);
