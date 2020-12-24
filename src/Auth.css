@@ -33,3 +33,9 @@ button {
     color:whitesmoke;
     right:5px;
 }
+
+.error {
+    font-style: italic;
+    color:red;
+    
+}

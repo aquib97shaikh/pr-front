@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import HomeLayout from "./HomeLayout";
 function App() {
-  const [loggedIn, setLoggedIn] = useState(true);
+  const [loggedIn, setLoggedIn] = useState(false);
   const [userData,setUserData] = useState(null);
   const loggedInHandler = (r) => {
     setLoggedIn(true);

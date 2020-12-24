@@ -35,8 +35,9 @@ function SignUp(props) {
     }
 
     return (
-      <div className="container">
+      <form className="container">
         <h1>Create an Account</h1>
+
         <Input
           type="text"
           value={userData.fname}
@@ -96,7 +97,7 @@ function SignUp(props) {
         <span className="error">{error}</span>
 
 
-      </div>
+      </form>
     );
 }
 
