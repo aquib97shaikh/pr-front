@@ -4,6 +4,7 @@ import "./HeadAndFoot.css"
 function Header(props) {
     const [prop,setProp] = useState({home:"active"});
     return (
+      <>
       <div className="header">
         <Link className="logo" to="/">Lets Learn</Link>
         <div className="header-right">
@@ -14,6 +15,8 @@ function Header(props) {
           <Link  to="" style={{border:"1px solid red"}}onClick={props.logoutHandler}>Logout</Link >
         </div>
       </div>
+      {/* <div className="empty-header"></div> */}
+      </>
     );
 }
 

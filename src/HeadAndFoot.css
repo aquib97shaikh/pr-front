@@ -2,9 +2,19 @@
 .header {
     overflow: hidden;
     background-color: #f1f1f1;
-    padding: 15px 8px;
-  }
+    margin: 10px 30px;
+
+    position: relative;
   
+  }
+  .empty-header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    margin:30px;
+    position: relative;
+    width: 100vw;
+    height: 30px;
+  }
   /* Style the header links */
   .header a {
     float: left;
@@ -38,6 +48,7 @@
   /* Float the link section to the right */
   .header-right {
     float: right;
+
   }
   
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */

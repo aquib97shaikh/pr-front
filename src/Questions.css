@@ -58,9 +58,54 @@ a.sq:hover{
     margin: 10px 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around;}
+.qts-header {
+    position:sticky;
+    top:40px;
+    background-color: #FFFFFF;
+    z-index: 2;
+    width: 100%;
 }
 
 .editor {
+    display:flex;
+    border:1px solid rgba(63,63,63,0.1);
+    margin:10px;
+    flex-direction: column;
+}
+.editor .toggle-editor {
+    border:1px solid rgba(63,63,63,0.2);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    padding:3px 3px 3px 10px;
+}
+.editor .toggle-editor .toggler {
+   border: 1px solid  rgba(63,63,63,0.4);
+}
+/* .....................Goals.js......... */
+.addShadow {
+    border: 0px !important;
+    box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 0 0 rgba(16, 22, 26, 0), 0 1px 1px rgba(16, 22, 26, 0.2);
+  }
+.goal-container {
+    margin: 10px;
+    margin-bottom: 40px;
+}
+.goal-item {
+    display: flex;
+}
+.goal-item .goal-btn-div {
+    margin:10px;
+    display: flex;
 
+}
+.goal-btn-div .goal-btn {
+    font-size: 24px;
+    padding:0 10px;
+    width:40px;
+    height: 40px;
+    border: 0px !important;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 0 0 rgba(16, 22, 26, 0), 0 1px 1px rgba(16, 22, 26, 0.2);
 }

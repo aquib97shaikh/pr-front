@@ -13,8 +13,6 @@
 .inp label{
     position: absolute;
     top:10px;
-    font-size: 23px;
-    transition: all 0.4s ease-in;
     left: 19px;
 }
 .inp input:focus ~ label  {

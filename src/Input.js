@@ -14,6 +14,7 @@ function Input(props) {
         <div className="inp">
             <input {...prop } onChange={valueChange} />
             <label className={value.length!==0 ? "fs10" : ""}>{label}</label>
+            
 
         </div>
     )
