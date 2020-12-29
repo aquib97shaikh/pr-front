@@ -27,7 +27,12 @@ function Auth(props) {
         .then(r=>r.json())
         .then(r=>{
           // console.log(r);
-          isNoU(r.er) ? props.loggedInHandler(r) : setError(r.er);
+          if(isNoU(r.er)) {
+            props.loggedInHandler(r);
+            localStorage.setItem("letsLearnJWT",r.token)
+          }else{
+            setError(r.er);
+          }
         })
       }
     return (

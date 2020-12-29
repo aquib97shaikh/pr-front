@@ -9,7 +9,7 @@
     justify-content: center;
 
 }
-button {
+.auth button {
     border-radius: 10px;
     height: 40px;
     width: 150px;
@@ -24,7 +24,7 @@ button {
 }
 
 
-.container button {
+.auth .container button {
     position: absolute;
     height: 40px;
     width: 150px;

@@ -15,7 +15,7 @@ function LogIn(props) {
         <h1>Loggin to your Account</h1>
         <Input
           type="text"
-          label="username"
+          label="Username"
           required
           value={username}
           onChange={(event) => setUsername(event.target.value.trim())}
@@ -23,7 +23,7 @@ function LogIn(props) {
         <Input
           type="password"
           required
-          label="pwd"
+          label="Password"
           value={pwd}
           onChange={(event) => setPwd(event.target.value.trim())}
         />

@@ -16,7 +16,7 @@ function SignUp(props) {
                 return;
             }
         }
-
+        
         if(!validateEmail(userData.email)){
             setError("Enter valid email address!");
             return ;
