@@ -53,7 +53,10 @@ a.sq:hover{
 .qts-container button:focus {
     outline: none;
 }
-
+.list-container .qts-item-container a,.list-container .qts-item-container a:link,.list-container .qts-item-container a:visited{
+    text-decoration: none;
+    color: #3f3f3f;
+}
 .qts-header, .qts-title {
     margin: 10px 0;
     display: flex;

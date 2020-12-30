@@ -5,6 +5,7 @@ import Footer from './Footer'
 import Header from './Header'
 import Home from './Home';
 import Pool from './Pool';
+import Question from './Question';
 import Review from './Review';
 import Tab from './Tab';
 
@@ -29,6 +30,9 @@ function HomeLayout(props) {
         <Switch>
             <Route path="/createQuestion">
                 <CreateQuestion/> 
+            </Route>
+            <Route path="/question/:id">
+                <Question />
             </Route>
             <Route exact path="/">
                 <Tab options={["Questions","Pool","Review"]} tabHandler={tabHandler}/>
