@@ -53,6 +53,13 @@ a.sq:hover{
 .qts-container button:focus {
     outline: none;
 }
+
+.list-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
 .list-container .qts-item-container a,.list-container .qts-item-container a:link,.list-container .qts-item-container a:visited{
     text-decoration: none;
     color: #3f3f3f;

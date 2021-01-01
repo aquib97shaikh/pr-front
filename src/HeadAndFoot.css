@@ -16,6 +16,9 @@
     height: 30px;
   }
   /* Style the header links */
+  .nav-item {
+    margin: 0 10px;
+  }
   .header a {
     float: left;
     color: black;

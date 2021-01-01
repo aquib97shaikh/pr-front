@@ -36,7 +36,7 @@ function HomeLayout(props) {
             </Route>
             <Route exact path="/">
                 <Tab options={["Questions","Pool","Review"]} tabHandler={tabHandler}/>
-                {tabView}
+                { tabView}
             </Route>
         </Switch>
         <Footer username={username} />

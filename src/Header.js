@@ -8,11 +8,11 @@ function Header(props) {
       <div className="header">
         <Link className="logo" to="/">Lets Learn</Link>
         <div className="header-right">
-          <Link className={prop.home || ""} to="/" onClick={()=>setProp({home:"active"})}>
+          <Link className={prop.home +" nav-item"|| "nav-item"} to="/" onClick={()=>setProp({home:"active"})}>
             Home
           </Link>
-          <Link className={prop.contact || ""} to="/contact" onClick={()=>setProp({contact:"active"})}>Contact</Link >
-          <Link  to="" style={{border:"1px solid red"}}onClick={props.logoutHandler}>Logout</Link >
+          <Link className={prop.profile + " nav-item" || "nav-item"} to="/profile" onClick={()=>setProp({profile:"active"})}>Profile</Link >
+          <Link className="nav-item" to="" style={{border:"1px solid red"}}onClick={props.logoutHandler}>Logout</Link >
         </div>
       </div>
       {/* <div className="empty-header"></div> */}
