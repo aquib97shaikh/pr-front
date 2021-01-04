@@ -21,7 +21,7 @@ function App() {
   }
   useEffect(()=>{
     if(localStorage.getItem("letsLearnJWT")!==null){
-      console.log(localStorage.getItem("letsLearnJWT")!==null);
+      // console.log(localStorage.getItem("letsLearnJWT")!==null);
       setLoggedIn(true);
       fetch("http://localhost:9999/userinfo",{
         method:"GET",
@@ -31,7 +31,7 @@ function App() {
         }
       }).then(r=>r.json())
       .then(r=>{
-        console.log(r);
+        // console.log(r);
         setUserData(r);
       })
     }
@@ -41,7 +41,8 @@ function App() {
     <Router>
       <Switch>
         <Route path="/">
-          {loggedIn ? <HomeLayout logoutHandler={logoutHandler} user={userData && userData.user} /> : <Auth loggedInHandler={loggedInHandler} />}
+          {loggedIn ? <HomeLayout logoutHandler={logoutHandler} user={userData && userData.user} token={userData && userData.token} /> 
+          : <Auth loggedInHandler={loggedInHandler} />}
         </Route>
       </Switch>
     </Router>

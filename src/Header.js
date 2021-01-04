@@ -12,7 +12,7 @@ function Header(props) {
             Home
           </Link>
           <Link className={prop.profile + " nav-item" || "nav-item"} to="/profile" onClick={()=>setProp({profile:"active"})}>Profile</Link >
-          <Link className="nav-item" to="" style={{border:"1px solid red"}}onClick={props.logoutHandler}>Logout</Link >
+          <Link className="nav-item" to="" style={{border:"1px solid red",backgroundColor:'rgba(243, 32, 19,0.7)'}}onClick={props.logoutHandler}>Logout</Link >
         </div>
       </div>
       {/* <div className="empty-header"></div> */}

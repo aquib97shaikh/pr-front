@@ -119,3 +119,126 @@ a.sq:hover{
     cursor: pointer;
     box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 0 0 rgba(16, 22, 26, 0), 0 1px 1px rgba(16, 22, 26, 0.2);
 }
+
+
+/* .................................Question.js................ */
+.qts-view{
+    position: relative;
+    border-collapse: collapse;
+
+    display: flex;
+    border:3px solid rgba(83, 214, 179, 0.6);
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+}
+
+.qts-view .back {
+    border-bottom:2px solid rgba(83, 214, 179, 0.9);
+    display: flex;
+    font-size: 1.2em;
+    order: -1;
+}
+.image{
+    margin:5px;
+    padding: 5px;
+    width: 5px;
+    height: 5px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMjQwLjgyMyAyNDAuODIzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNDAuODIzIDI0MC44MjM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGlkPSJDaGV2cm9uX1JpZ2h0IiBkPSJNNTcuNjMzLDEyOS4wMDdMMTY1LjkzLDIzNy4yNjhjNC43NTIsNC43NCwxMi40NTEsNC43NCwxNy4yMTUsMGM0Ljc1Mi00Ljc0LDQuNzUyLTEyLjQzOSwwLTE3LjE3OQ0KCQlsLTk5LjcwNy05OS42NzFsOTkuNjk1LTk5LjY3MWM0Ljc1Mi00Ljc0LDQuNzUyLTEyLjQzOSwwLTE3LjE5MWMtNC43NTItNC43NC0xMi40NjMtNC43NC0xNy4yMTUsMEw1Ny42MjEsMTExLjgxNg0KCQlDNTIuOTQyLDExNi41MDcsNTIuOTQyLDEyNC4zMjcsNTcuNjMzLDEyOS4wMDd6Ii8+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==);
+}
+
+.qts-view .title {
+    background-color: rgba(83, 214, 179, 0.9);
+    font-size: 3em;
+    padding: 5px 15px;
+    order: -1;
+}
+.qts-view .mkd {
+    margin:5px;
+    padding:10px;
+}
+.qts-view .gitLink {
+   order: -1;
+   padding: 3px 5px;
+   margin: 3px;
+   text-align: right;
+}
+
+.gitLink a {
+    margin: 8px;
+    padding: 3px;
+    border: 1px solid rgba(83, 214, 179, 0.7) !important;
+    color:rgba(83, 214, 179, 1);
+    font-size: 1.1em;
+    border-radius: 8px;
+}
+.gitLink a:hover {
+    background-color: rgba(83, 214, 179, 0.7) ;
+    border: 1px solid rgba(83, 214, 179, 0.9);
+
+}
+
+a:link ,a:visited, a:active {
+    text-decoration: none;
+    color:inherit;
+}
+
+.qts-view .gs-tab{
+    display: flex;
+    justify-content: space-between;
+    border-collapse: collapse;
+
+}
+.gs-tab div {
+    padding: 15px;
+    font-size: 1.5em;
+    margin:0 4px;
+    border-collapse: collapse;
+    border: 3px solid rgba(83, 214, 179, 0.7) !important;
+    cursor: pointer;
+
+}
+.gs-tab div:hover {
+    background-color:rgba(83, 214, 179, 0.8) ;
+    color:#3f3f3f;
+
+}
+.active-gs-tab{
+    background-color:rgba(83, 214, 179, 0.9) ;
+    color:#3f3f3f;
+
+}
+
+.tab-view {
+    border-collapse: collapse;
+    margin:-3px 4px;
+    border: 3px solid rgba(83, 214, 179, 0.7) !important;
+}
+.animate-right{
+    position:relative;
+    animation: animateright 0.8s
+}
+@keyframes animateright{
+    from {
+        right:-50px;
+        opacity:0
+    } 
+    to {
+        top:0;opacity:1
+    }
+}
+
+.animate-left{
+    position:relative;
+    animation:animateleft 0.4s
+}
+@keyframes animateleft{
+    from {
+        left:-10px;
+        opacity:0
+    } 
+    to {
+        left:0;
+        opacity:1
+    }
+}
