@@ -13,7 +13,7 @@ import UserProfile from './UserProfile';
 
 function HomeLayout(props) {
      const username = (props.user && props.user.username) || "Let's Learn from Each other";
-     const [tabView, setTabView] = useState(<Home token={props.token}/>)
+     const [tabView, setTabView] = useState(<Home token={props.token} user={props.user}/>)
      const tabHandler = (idx)=>{
          if(idx===2){
              setTabView(<Review/>);
@@ -36,7 +36,7 @@ function HomeLayout(props) {
                 <CreateQuestion/> 
             </Route>
             <Route path="/question/:id">
-                <Question />
+                <Question user={props.user}/>
             </Route>
             <Route path="/user/:username">
                 <UserProfile user={props.user} />

@@ -41,7 +41,6 @@ function Home(props) {
           </Link>
         </div>
         <List items={questions} renderComponent={QuestionItem}>
-          Hello
         </List>
       </div>
       {totalPage > 1 && (

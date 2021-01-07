@@ -1,10 +1,19 @@
 import React from 'react'
+import List from "./List";
 
-function GoalView() {
+function GoalItem(props) {
     return (
-        <div>
-            GoalView
-        </div>
+      <div className="gv-item" key={props.key}>
+        <div className="gv-item-no">{props.key+1}</div>
+        {props.item}
+      </div>
+    );
+}
+
+function GoalView(props) {
+    return (
+        <List items={props.goals} style={{flexDirection:"column",justifyContent:"flex-start"}} renderComponent={GoalItem}>
+        </List>
     )
 }
 

@@ -4,7 +4,7 @@ function QuestionItem(props) {
     
 
     return (
-        <div className="qts-item-container">
+        <div className="qts-item-container" key={props.key}>
         <Link to={`/question/${props.item._id}`}>
         
         <div style={{height:"200px",width:"300px",margin:"10px", backgroundColor:"lightblue"}}>

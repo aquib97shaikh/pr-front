@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Dropdown.css";
 // function renderD(){
 //   (
@@ -16,27 +16,29 @@ import "./Dropdown.css";
 //   );
 // }
 function DropDown(props) {
-  const [clicked, setClicked] = useState(false,(clicked)=>{
-    if(clicked){
-      document.addEventListener('click', closeMenu);
-
-    }else{
-    document.removeEventListener('click', closeMenu);
-    }
-  });
+  const [clicked, setClicked] = useState(false);
   const [selected, setSelected] = useState(props.title);
-  let dropdownMenu;
+  let dropdownMenu = React.createRef();
   const clickedHandler = (event) => {
     setSelected(event.target.innerText);
     setClicked(false);
     props.selectHandler(event.target.innerText);
   };
   const closeMenu = (event)=>{
-    if(!dropdownMenu.contains(event.target)){
+    if(dropdownMenu !== null && !dropdownMenu.contains(event.target)){
       setClicked(false);
     }
     
   }
+  useEffect(()=>{
+    if(clicked){
+      document.addEventListener('click', closeMenu);
+
+    }else{
+    document.removeEventListener('click', closeMenu);
+    }
+
+  },[clicked])
   return (
     <div className="dropdown">
       <button
@@ -53,8 +55,8 @@ function DropDown(props) {
         <div className="dropdown-menu" ref={(element) => {
           dropdownMenu = element;
         }}>
-          {props.options.map((i) => {
-            return <span onClick={clickedHandler}>{i}</span>;
+          {props.options.map((i,idx) => {
+            return <span onClick={clickedHandler} key={idx}>{i}</span>;
           })}
         </div>
       ) : null}

@@ -25,3 +25,9 @@
     font-size: 9px;
     transition: all 0.4s ease-in;
 }
+
+textarea:focus, input:focus ,button:focus{
+    outline: none;
+    border-bottom:1px solid #3f3f3f !important;
+    border-right:1px solid #3f3f3f !important;
+}
